@@ -1,0 +1,13 @@
+(executable
+ (public_name theloop)
+ (name main)
+ (libraries
+  dream
+  caqti
+  config
+  lwt
+  ptime
+  ppx_rapper_lwt
+  caqti-driver-postgresql
+  caqti-lwt)
+ (preprocess (pps ppx_string ppx_rapper lwt_ppx ppx_yojson_conv)))

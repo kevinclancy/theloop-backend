@@ -1,0 +1,5 @@
+(executable
+ (public_name integration_test)
+ (name test_theloop)
+ (libraries lwt lwt.unix lwt_ppx)
+ (preprocess (pps lwt_ppx ppx_string)))

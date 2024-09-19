@@ -1,0 +1,11 @@
+(executable
+ (public_name init)
+ (name init)
+ (libraries
+  dream
+  caqti
+  config
+  ppx_rapper_lwt
+  caqti-driver-postgresql
+  caqti-lwt)
+ (preprocess (pps ppx_string ppx_rapper lwt_ppx ppx_yojson_conv)))
